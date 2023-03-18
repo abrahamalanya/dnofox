@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400&family=Unbounded&display=swap');
+
+/* =================GENERAL================= */
+:root {
+    --color-body: #000;
+    --font-family-primary: 'Josefin Sans', sans-serif;
+    --font-family-secondary: 'Unbounded', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-primary);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.rot-left {
+    transform: rotate(340deg);
+}
+
+.rot-right {
+    transform: rotate(20deg);
+}
+
+/* =================CARD================= */
+.card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50vh;
+}
+
+.card-picture {
+    display: flex;
+    justify-content: center;
+    background-image: url("./images/fondo_producto.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.card-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+.menu-title {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+    text-transform: lowercase;
+    letter-spacing: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-subtitle {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: -15px;
+}
+
+.menu-extra {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.card-detail ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    grid-gap: 0.5rem;
+}
+
+.card-detail ul li {
+    list-style: none;
+}
