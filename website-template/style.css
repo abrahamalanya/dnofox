@@ -1,0 +1,253 @@
+/* ========== GENERAL ========== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --main-c: #FFD700;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== HEADER ========== */
+/* Estilos generales para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #F5F5F5;
+}
+
+/* Estilos para el logo */
+.logo img {
+    height: 50px;
+}
+
+/* Estilos para el menú */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu nav ul li a:hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+/* Estilos para el icono del carrito */
+.carrito {
+    font-size: 1.5rem;
+}
+
+.carrito a {
+    color: #333;
+    text-decoration: none;
+}
+
+.carrito a:hover {
+    color: var(--main-c);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+    }
+
+    .menu nav ul li a {
+        display: block;
+        padding: 1rem;
+    }
+
+    .carrito {
+        margin-top: 1rem;
+    }
+}
+
+/* ========== HERO ========== */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('img/hero_bg.jpg') center/cover no-repeat;
+}
+
+.hero-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-gradient h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.hero-gradient p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--main-c);
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* ========== PROMOCIONES ========== */
+.promotions {
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+}
+
+.promotions-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+}
+
+.promotions-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    width: calc(80% - 20px);
+    transition: transform 0.3s ease;
+}
+
+.promotions-card:hover {
+    transform: scale(1.1);
+}
+
+/* tarjeta */
+.promotions-card img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.promotions-card h3 {
+    margin-bottom: 10px;
+}
+
+.promotions-card p {
+    margin-bottom: 5px;
+}
+
+.promotions-card .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.promotions-card .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.promotions-card .quantity button {
+    background-color: #f7f7f7;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+
+/* ========== FOOTER ========== */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.column {
+    width: 30%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li a:hover {
+    color: #666;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

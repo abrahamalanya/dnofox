@@ -1,0 +1,25 @@
+{
+  "comidas": [
+    {
+      "nombre": "Hamburguesa",
+      "precio": 8.99,
+      "categoria": "Fast food",
+      "descripcion": "Una deliciosa hamburguesa con queso, lechuga, tomate y tocino.",
+      "imagen": "https://ejemplo.com/hamburguesa.jpg"
+    },
+    {
+      "nombre": "Ensalada César",
+      "precio": 6.99,
+      "categoria": "Ensaladas",
+      "descripcion": "Una refrescante ensalada con pollo, lechuga, crutones y aderezo César.",
+      "imagen": "https://ejemplo.com/ensalada.jpg"
+    },
+    {
+      "nombre": "Pizza Margarita",
+      "precio": 11.99,
+      "categoria": "Pizza",
+      "descripcion": "Una exquisita pizza con salsa de tomate, queso mozzarella y albahaca.",
+      "imagen": "https://ejemplo.com/pizza.jpg"
+    }
+  ]
+}
