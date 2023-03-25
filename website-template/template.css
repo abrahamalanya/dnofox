@@ -867,7 +867,7 @@ input#check {
 /* =========================MAIN========================= */
 /* Hero Section Homepage */
 .wrap-header-hero {
-    background: linear-gradient(to bottom, rgb(0 0 0 / .85), rgb(0 0 0 / .5)), url(img/bg_2.avif);
+    background: linear-gradient(to bottom, rgb(0 0 0 / .85), rgb(0 0 0 / .5)), url(img/bg_1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -900,7 +900,7 @@ input#check {
 /* Menu Category Section */
 .menu-category-section {
     text-align: center;
-    padding: 2rem 0;
+    padding-top: 2rem;
 }
 
 .menu-category-section h2 {
@@ -924,14 +924,19 @@ input#check {
 }
 
 /* Promotions Section */
-.promotions-section h2 {
+.promotions-section {
+}
+
+.promotions-section h2,
+.contact-section h2 {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     color: var(--main-destacado)
 }
 
-.promotions-section h2 span {
+.promotions-section h2 span,
+.contact-section h2 span {
     font-size: 1.5rem;
     color: var(--main-color);
 }
@@ -952,6 +957,210 @@ input#check {
     grid-area: span 2;
 }
 
+/* Testimonial Carousel */
+.testimonial-section {
+    margin-top: 5rem;
+}
+
+.testimonials-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-container {
+    padding: 2rem;
+}
+
+.testimonial {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    position: relative;
+    font-size: 1rem;
+}
+
+.testimonial blockquote::before {
+    content: open-quote;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    font-size: 3em;
+    color: #ccc;
+}
+
+.testimonial blockquote::after {
+    content: close-quote;
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    font-size: 3em;
+    color: #ccc;
+}
+
+.testimonial blockquote p {
+    color: #dadada;
+    margin: 0 50px;
+    text-align: center;
+}
+
+.testimonial blockquote cite {
+    width: 90%;
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.testimonials-nav button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.testimonials-nav button:hover {
+    background-color: var(--main-destacado);
+}
+
+.testimonials-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-presentation h2 {
+    font-size: 4rem;
+    color: var(--main-destacado);
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .testimonial {
+        flex-direction: row;
+    }
+}
+
+/* Contact Section */
+.contact-section {
+}
+
+.contact-container {
+    margin: auto;
+}
+
+.contact-container img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-basic {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.contact-basic p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.contact-basic p span {
+    font-style: italic;
+    font-size: 1.3rem;
+    margin: 0 0 0 1rem;
+}
+
+.rrss-icon {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--main-destacado);
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.form-group button:hover {
+    background-color: var(--main-destacado);
+    color: #fff;
+}
+
+
+
+@media (max-width: 1200px) {
+    .contact-basic {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 90%;
+    }
+}
 
 /* =========================FOOTER========================= */
 /* Footer de la página */
