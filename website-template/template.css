@@ -265,6 +265,58 @@ li {
     grid-template-columns: repeat(6, 1fr);
 }
 
+/* form*/
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--main-destacado);
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.form-group button:hover {
+    background-color: var(--main-destacado);
+    color: #fff;
+}
+
 /* Main Section */
 .main-section {
     padding: 20px;
@@ -565,93 +617,6 @@ li {
     color: var(--main-destacado);
 }
 
-/* checkout form */
-form.checkout-form {
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 12px 9px rgb(161 151 151 / 15%);
-}
-
-form.checkout-form input[type="text"],
-form.checkout-form input[type="number"],
-form.checkout-form input[type="password"] {
-    width: 100%;
-    height: 60px;
-    padding-left: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    outline: none;
-    color: #CFCFCF;
-    border: 1px solid #CFCFCF;
-}
-
-.row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-}
-
-.col-lg-6 {
-    flex: 0 0 auto;
-    width: 50%;
-}
-
-form.checkout-form h4.two {
-    padding-top: 20px;
-}
-
-select {
-    word-wrap: normal;
-}
-
-.nice-select {
-    -webkit-tap-highlight-color: transparent;
-    background-color: #fff;
-    border-radius: 5px;
-    border: solid 1px #e8e8e8;
-    box-sizing: border-box;
-    clear: both;
-    cursor: pointer;
-    display: block;
-    float: left;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: normal;
-    height: 42px;
-    line-height: 40px;
-    outline: none;
-    padding-left: 18px;
-    padding-right: 30px;
-    position: relative;
-    text-align: left !important;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    white-space: nowrap;
-    width: auto;
-}
-
-form.checkout-form .nice-select {
-    width: 100%;
-    height: 60px;
-    margin-top: 10px;
-    background-color: #FCFCFC;
-    color: #CFCFCF;
-    border: 1px solid #CFCFCF;
-}
-
-
-
-
-
-
 /* MEDIA QUERY */
 @media (max-width:1200px) {
     .section-header {
@@ -681,16 +646,6 @@ form.checkout-form .nice-select {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 /* =========================Header========================= */
 header.main-header {
@@ -1100,59 +1055,6 @@ input#check {
     gap: 1rem;
     justify-content: flex-end;
 }
-
-.contact-form h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 2px solid #ddd;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--main-destacado);
-}
-
-.form-group textarea {
-    height: 150px;
-}
-
-.form-group button {
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 900;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.form-group button:hover {
-    background-color: var(--main-destacado);
-    color: #fff;
-}
-
-
 
 @media (max-width: 1200px) {
     .contact-basic {

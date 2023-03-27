@@ -65,7 +65,7 @@
                         <i class="closeButton fa-solid fa-xmark"></i>
                         <div class="counter-container">
                             <div class="counter-food">
-                                <img alt="food" src="img/food_3.png">
+                                <img alt="food" src="img/food_1.jpg">
                                 <h4>Pasta, kiwi and sauce chilli</h4>
                             </div>
                             <h3>S/19</h3>
@@ -90,7 +90,7 @@
                         <i class="closeButton fa-solid fa-xmark"></i>
                         <div class="counter-container">
                             <div class="counter-food">
-                                <img alt="food" src="img/food_3.png">
+                                <img alt="food" src="img/food_2.avif">
                                 <h4>Pasta, kiwi and sauce chilli</h4>
                             </div>
                             <h3>S/29</h3>
@@ -122,94 +122,21 @@
                 </div>
             </div>
 
-            <!-- <div class="payment"></div> -->
-            <div>
-                <form class="checkout-form">
-                    <h4>Buyer information</h4>
-                    <input type="text" name="Name" placeholder="Full Name">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <input type="text" name="E-mail" placeholder="E-mail">
-                        </div>
-                        <div class="col-lg-6">
-                            <input type="text" name="E-mail" placeholder="Phone">
-                        </div>
+            <div class="form-container card">
+                <h2>Contáctanos</h2>
+                <form>
+                    <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
                     </div>
-                    <h4 class="two">Delivery addresses</h4>
-                    <select class="nice-select Advice" style="display: none;">
-                        <option>California</option>
-                        <option>California 1</option>
-                        <option>California 2</option>
-                        <option>California 3</option>
-                        <option>California 4</option>
-                    </select>
-                    <div class="nice-select Advice" tabindex="0"><span class="current">California</span>
-                        <ul class="list">
-                            <li data-value="California" class="option selected">California</li>
-                            <li data-value="California 1" class="option">California 1</li>
-                            <li data-value="California 2" class="option">California 2</li>
-                            <li data-value="California 3" class="option">California 3</li>
-                            <li data-value="California 4" class="option">California 4</li>
-                        </ul>
+                    <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
                     </div>
-                    <input type="text" name="Name" placeholder="Street">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <input type="text" name="E-mail" placeholder="House number">
-                        </div>
-                        <div class="col-lg-6">
-                            <input type="number" name="E-mail" placeholder="Apartment number">
-                            <span>*dispensable</span>
-                        </div>
+                    <div class="form-group">
+                    <input type="text" id="text" name="text" placeholder="Nro de celular" required>
                     </div>
-                    <h4 class="two">Payment method</h4>
-                    <div class="nav nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                            aria-selected="false" tabindex="-1">Card</button>
-                        <button class="nav-link active" id="v-pills-profile-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                            aria-selected="true">Cash</button>
+                    <div class="form-group">
+                    <button type="submit">Pagar</button>
                     </div>
-                    <div class="tab-content" id="v-pills-tabContent">
-
-                        <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            <label>
-                                <input type="radio" name="test" value="small" checked="">
-                                <img alt="checkbox-img" src="assets/img/checkbox-1.png">
-                            </label>
-
-                            <label>
-                                <input type="radio" name="test" value="big">
-                                <img alt="checkbox-img" src="assets/img/checkbox-2.png">
-                            </label>
-                            <label>
-                                <input type="radio" name="test" value="big">
-                                <img alt="checkbox-img" src="assets/img/checkbox-3.png">
-                            </label>
-                            <input type="number" name="Name" placeholder="Card number">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="text" name="E-mail" placeholder="Expiration Date">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="password" placeholder="CVV">
-                                </div>
-                            </div>
-                            <label class="checkbox-one">Save my payments details for future purchases
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-
-                            <div class="tab-pane fade active show" id="v-pills-profile" role="tabpanel"
-                                aria-labelledby="v-pills-profile-tab">
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <button class="button-price">Send</button>
                 </form>
             </div>
         </div>

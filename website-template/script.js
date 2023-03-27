@@ -1,4 +1,4 @@
-
+// testimonials
 function renderTestimonial(index) {
     const container = document.querySelector('.testimonials-container');
     const testimonial = testimonials[index];

@@ -18,8 +18,111 @@ const testimonials = [
 
 const menus = [
     {
-        name: 'Hamburguesa',
+        name: 'Salchipapas',
         price: 'S/10',
-        image: 'img/menus/piqueo_1.jpg'
+        category: 'piqueos',
+        image: 'img/img_piqueos.png'
+    },
+    {
+        name: 'Salchipapas',
+        price: 'S/10',
+        category: 'piqueos',
+        image: 'img/img_piqueos.png'
+    },
+    {
+        name: 'Salchipapas',
+        price: 'S/10',
+        category: 'piqueos',
+        image: 'img/img_piqueos.png'
+    },
+    {
+        name: 'Salchipapas',
+        price: 'S/10',
+        category: 'piqueos',
+        image: 'img/img_piqueos.png'
+    },
+    {
+        name: 'Salchipapas',
+        price: 'S/10',
+        category: 'piqueos',
+        image: 'img/img_piqueos.png'
+    },
+    {
+        name: 'Salchipapas',
+        price: 'S/10',
+        category: 'piqueos',
+        image: 'img/img_piqueos.png'
+    },
+    {
+        name: 'Frutillada',
+        price: 'S/10',
+        category: 'frappes',
+        image: 'img/img_bebidas-frias.png'
+    },
+    {
+        name: 'Frutillada',
+        price: 'S/10',
+        category: 'frappes',
+        image: 'img/img_bebidas-frias.png'
+    },
+    {
+        name: 'Frutillada',
+        price: 'S/10',
+        category: 'frappes',
+        image: 'img/img_bebidas-frias.png'
+    },
+    {
+        name: 'Frutillada',
+        price: 'S/10',
+        category: 'frappes',
+        image: 'img/img_bebidas-frias.png'
+    },
+    {
+        name: 'Frutillada',
+        price: 'S/10',
+        category: 'frappes',
+        image: 'img/img_bebidas-frias.png'
+    },
+    {
+        name: 'Frutillada',
+        price: 'S/10',
+        category: 'frappes',
+        image: 'img/img_bebidas-frias.png'
+    },
+    {
+        name: 'Machu Picchu',
+        price: 'S/10',
+        category: 'licores',
+        image: 'img/img_licores.png'
+    },
+    {
+        name: 'Machu Picchu',
+        price: 'S/10',
+        category: 'licores',
+        image: 'img/img_licores.png'
+    },
+    {
+        name: 'Machu Picchu',
+        price: 'S/10',
+        category: 'licores',
+        image: 'img/img_licores.png'
+    },
+    {
+        name: 'Machu Picchu',
+        price: 'S/10',
+        category: 'licores',
+        image: 'img/img_licores.png'
+    },
+    {
+        name: 'Machu Picchu',
+        price: 'S/10',
+        category: 'licores',
+        image: 'img/img_licores.png'
+    },
+    {
+        name: 'Machu Picchu',
+        price: 'S/10',
+        category: 'licores',
+        image: 'img/img_licores.png'
     }
-]
+];

@@ -71,32 +71,7 @@
                 </li>
             </ul>
         </div>
-        <div id="piqueos" class="columns column-3">
-            <div class="card product">
-                <img src="img/food_3.png" alt="food_1">
-                <h4 class="product-title">Lorem ipsum dolor sit.</h4>
-                <div class="product-category">
-                    <div class="category-text">
-                        <a href="#">Piqueos</a>
-                        <a href="#">Picante</a>
-                    </div>
-                    <div class="category-icon">
-                        <a href="">ℹ</a>
-                        <a href="">🧡</a>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="product-pq">
-                    <p class="product-price">S/ 18</p>
-                    <div class="product-quantity">
-                        <button>-</button>
-                        <input type="number" id="quantity" name="quantity" min="1" value="1">
-                        <button>+</button>
-                    </div>
-                </div>
-                <button class="product-buy-button">Comprar</button>
-            </div>
-        </div>
+        <div id="piqueos" class="columns column-3 menus-container"></div>
     </section>
     </main>
 
@@ -168,6 +143,45 @@
             </div>
         </div>
     </footer>
+
+    <script src="./data.js"></script>
+    <script>
+        // menus
+        function renderMenus(index) {
+            const container = document.querySelector('.menus-container');
+            const menu = menus[index];
+            const html = `
+                <div class="card product">
+                    <img src="${menu.image}" alt="${menu.name}">
+                    <h4 class="product-title">${menu.name}</h4>
+                    <div class="product-category">
+                        <div class="category-text">
+                            <a href="#">${menu.category}</a>
+                        </div>
+                        <div class="category-icon">
+                            <a href="">ℹ</a>
+                            <a href="">🧡</a>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="product-pq">
+                        <p class="product-price">${menu.price}</p>
+                        <div class="product-quantity">
+                            <button>-</button>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <button class="product-buy-button">Comprar</button>
+                </div>
+            `;
+            container.innerHTML += html;
+        }
+        for (let i = 0; i < menus.length; i++) {
+            console.log(menus.length)
+            renderMenus(i);
+        }
+    </script>
 </body>
 
 </html>
