@@ -179,6 +179,12 @@ li {
     opacity: 1;
 }
 
+@media (max-width: 700px) {
+    .card-overlay {
+        opacity: 1;
+    }
+}
+
 /* Enlaces y botones */
 .cta-main {
     background-color: var(--main-destacado);
@@ -641,12 +647,26 @@ li {
     }
 }
 
-@media (max-width:921px) {
+@media (max-width: 921px) {
+    .column-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .column-3 {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
+@media (max-width: 600px) {
+    .column-2 {
+        grid-template-columns: 300px;
+       justify-content: center;
+    }
+
+    .column-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 /* =========================Header========================= */
 header.main-header {
     position: relative;
@@ -850,6 +870,14 @@ input#check {
         width: 100%;
         padding: 1rem;
     }
+
+    .wrap-hero-home-page h1 {
+        font-size: 1.5rem;
+    }
+
+    .wrap-hero-home-page p {
+        font-size: 1rem;
+    }
 }
 
 /* Menu Category Section */
@@ -864,6 +892,10 @@ input#check {
 
 .menu-category-section p {
     margin-bottom: 2rem;
+}
+
+.menu-category h6, .menu-category span {
+    color: var(--main-color);
 }
 
 .menu-category img {
@@ -912,9 +944,33 @@ input#check {
     grid-area: span 2;
 }
 
+@media (max-width: 700px) {
+    .promotions-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 40vh);
+    }
+
+    .promotion-special {
+        grid-area: 1;
+    }
+}
+
 /* Testimonial Carousel */
 .testimonial-section {
     margin-top: 5rem;
+}
+
+.testimonials-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.testimonials-presentation h2 {
+    font-size: 4rem;
+    color: var(--main-destacado);
+    text-align: center;
 }
 
 .testimonials-carousel {
@@ -998,21 +1054,17 @@ input#check {
     background-color: var(--main-destacado);
 }
 
-.testimonials-presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.testimonials-presentation h2 {
-    font-size: 4rem;
-    color: var(--main-destacado);
-    text-align: center;
-}
-
 @media (max-width: 1200px) {
+    .testimonials-presentation h2 {
+        font-size: 2rem;
+    }
+
+    .testimonials-carousel {
+        width: 70%;
+    }
+
     .testimonial {
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 
@@ -1058,7 +1110,7 @@ input#check {
 
 @media (max-width: 1200px) {
     .contact-basic {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
         width: 90%;
     }
