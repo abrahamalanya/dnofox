@@ -11,7 +11,7 @@
 
 <body>
     <!-- CABECERA -->
-    <div class="wrap-header-hero">
+    <!-- <div class="wrap-header-hero"> -->
         <header class="main-header">
             <div class="header-wrap">
                 <div class="wrap-logo-header">
@@ -44,13 +44,13 @@
 
         <!-- CONTENIDO -->
         <main>
-            <section class="hero-home-page">
+            <section class="hero-home-page wrap-header-hero">
                 <div class="wrap-hero-home-page">
                     <h1>Carta DNOFOX</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quo, nemo maxime perferendis provident dolor.</p>
                 </div>
             </section>
-    </div>
+    <!-- </div> -->
 
     <section class="main-section">
         <div class="card section-header">
@@ -178,7 +178,6 @@
             container.innerHTML += html;
         }
         for (let i = 0; i < menus.length; i++) {
-            console.log(menus.length)
             renderMenus(i);
         }
     </script>
