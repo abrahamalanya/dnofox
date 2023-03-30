@@ -660,20 +660,21 @@ li {
 @media (max-width: 600px) {
     .column-2 {
         grid-template-columns: 300px;
-       justify-content: center;
+        justify-content: center;
     }
 
     .column-4 {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 /* =========================Header========================= */
 header.main-header {
     position: relative;
     top: 0;
     width: 100%;
     z-index: 9999;
-    background: linear-gradient(to bottom, rgb(0 0 0 / .85), rgb(0 0 0 / .8));
+    background: #000;
 }
 
 .header-wrap {
@@ -842,14 +843,18 @@ input#check {
 
 /* =========================MAIN========================= */
 /* Hero Section Homepage */
-.wrap-header-hero {
+/* .wrap-header-hero {
     background: linear-gradient(to bottom, rgb(0 0 0 / .85), rgb(0 0 0 / .5)), url(img/bg_1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 .hero-home-page {
+    background: linear-gradient(to bottom, rgb(0 0 0 / .85), rgb(0 0 0 / .5)), url(img/bg_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -881,6 +886,8 @@ input#check {
     }
 }
 
+
+
 /* Menu Category Section */
 .menu-category-section {
     text-align: center;
@@ -895,7 +902,8 @@ input#check {
     margin-bottom: 2rem;
 }
 
-.menu-category h6, .menu-category span {
+.menu-category h6,
+.menu-category span {
     color: var(--main-color);
 }
 
@@ -912,8 +920,7 @@ input#check {
 }
 
 /* Promotions Section */
-.promotions-section {
-}
+.promotions-section {}
 
 .promotions-section h2,
 .contact-section h2 {
@@ -1070,8 +1077,7 @@ input#check {
 }
 
 /* Contact Section */
-.contact-section {
-}
+.contact-section {}
 
 .contact-container {
     margin: auto;
@@ -1196,4 +1202,54 @@ input#check {
     .footer-creds {
         flex-flow: column;
     }
+}
+
+
+
+
+
+
+
+
+
+/* CSS GENERAL */
+/* Header presentacion de cada página */
+.page-header {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    display: inline-block;
+}
+
+.page-header img {
+    display: block;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.page-header-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header-title h2 {
+    font-size: 5rem;
+}
+
+.page-header-title span {
+    color: var(--main-destacado);
+    font-size: 2rem;
+    letter-spacing: 3px;
 }
