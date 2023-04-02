@@ -920,8 +920,6 @@ input#check {
 }
 
 /* Promotions Section */
-.promotions-section {}
-
 .promotions-section h2,
 .contact-section h2 {
     display: flex;
@@ -1077,8 +1075,6 @@ input#check {
 }
 
 /* Contact Section */
-.contact-section {}
-
 .contact-container {
     margin: auto;
 }
@@ -1239,7 +1235,6 @@ input#check {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.9);
     transition: opacity 0.3s ease-in-out;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
 }
@@ -1252,4 +1247,23 @@ input#check {
     color: var(--main-destacado);
     font-size: 2rem;
     letter-spacing: 3px;
+}
+
+/* Pagination */
+.listPage {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.listPage li {
+    padding: 20px;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.listPage .active {
+    background-color: var(--main-destacado);
+    color: #fff;
 }
